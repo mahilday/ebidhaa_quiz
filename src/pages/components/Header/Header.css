@@ -1,0 +1,89 @@
+.landing {
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -2;
+}
+.center_piece {
+  margin: 10% 5%;
+  width: 95%;
+  height: 100vh;
+}
+.center_piece>div{
+  position: relative;
+  top: 10%;
+}
+/* both inputs wrapper */
+.inputs_wrapper {
+  display: flex;
+}
+
+/* input field for location */
+.input_closest {
+  padding: 15px 50px;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+}
+/* location input  and icons wrapper Input */
+.input_loc {
+  position: relative;
+  width: 40%;
+  display: flex;
+  align-items: center;
+}
+.input_closest::placeholder {
+  opacity: 1;
+}
+/* styles for location input icons */
+.location {
+  position: absolute;
+  z-index: 1;
+  top: 35%;
+  margin: 0 3%;
+}
+.expand {
+  position: absolute;
+  z-index: 1;
+  top: 30%;
+  left: 92%;
+}
+/* input wrapper for time */
+.input_time {
+  position: relative;
+  width: 15%;
+  margin: 0 1%;
+}
+
+.input_watch::placeholder {
+  opacity: 1;
+}
+.exptime {
+  left: 80%;
+}
+/* styles for time icon
+  */
+.time {
+  position: absolute;
+  z-index: 1;
+  top: 32%;
+  font-size: 20px;
+  margin: 0 5%;
+}
+/* get food button */
+.getbtn {
+  background: #000;
+  color: #fff;
+  padding: 15px 20px;
+  font-size: 14px;
+  font-weight: 600;
+}
+/* extra features */
+.extra {
+  background: transparent;
+  border: none;
+  font-size: 12px;
+  font-weight: 500;
+  color: #000;
+}

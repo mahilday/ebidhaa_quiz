@@ -1,0 +1,28 @@
+.offers_wrapper>h1{
+    margin: 5%;
+    font-size:48px;
+}
+.offers{
+    display: flex;
+    overflow-x: hidden;
+    margin:2% 0% 5% 3%;
+}
+.offer{
+    position: relative;
+    margin: 0 .4%;
+}
+
+.offer>.discount_wrapper{
+    position: absolute;
+    left: 0px;
+    color:#fff;
+    font-size: 32px;
+    line-height: 48px;
+    color:#fff;
+    font-weight:500;
+    padding:20% 55% 0% 8%;
+    background: rgba(67, 67, 67, 0.4);
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+}

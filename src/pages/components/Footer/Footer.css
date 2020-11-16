@@ -1,0 +1,83 @@
+.footer_wrapper {
+  height: 40vh;
+  background: #000;
+  margin-top: 5%;
+  /* transform: matrix(-1, 0, 0, 1, 0, 0); */
+}
+/* title */
+.bpe {
+  font-size: 32px;
+  font-weight: 700;
+}
+/* second background for retro */
+.footer_writeup {
+  height: 40vh;
+  filter: grayscale(100%);
+  background: url("https://res.cloudinary.com/matsxript/image/upload/v1605491013/Group_km4crb.svg");
+}
+/* first part of footer */
+.top_text {
+  display: flex;
+  justify-content: space-between;
+  padding: 3% 5%;
+}
+/* store to get apps */
+.store_wrapper {
+  display: flex;
+}
+.footer_store {
+  display: flex;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+  width: 15rem;
+  padding: 10px 2px;
+  margin: 0 2%;
+  background: #dadada;
+  color: #000;
+}
+.footer_store > p,
+.footer_store > p > span {
+  margin: auto auto;
+  line-height: 20px;
+}
+.footer_store > p {
+  width: 50%;
+  font-size: 12px;
+}
+.footer_circle {
+  width: 34.83px;
+  height: 34.83px;
+  border-radius: 50%;
+  background: #000;
+}
+/* bottom part of footer */
+.bottom_text {
+  display: flex;
+  justify-content: space-between;
+  padding: 0% 5%;
+  margin-top: 2%;
+}
+.bottom_text > .footer_nav {
+  display: flex;
+  width: 20%;
+  justify-content: space-between;
+}
+.footer_nav > li,
+.footer_nav > li > a {
+  list-style: none;
+  color: #fff;
+}
+/* footer icons style */
+.footer_icons {
+  display: flex;
+  justify-content: space-between;
+  width:12%;
+}
+.footer_icons > li {
+  list-style: none;
+}
+.footer_icons > li > i {
+  color: #fff;
+  font-size: 23px;
+}
