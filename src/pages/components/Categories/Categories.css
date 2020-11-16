@@ -42,3 +42,14 @@
   font-size: 25px;
   transform: translate(-50%, -50%);
 }
+@media screen and (max-width: 700px){
+  .cats{
+    font-size: 25px;
+  }
+  .all{
+    font-size: 15px;
+  }
+  .each_cat>span{
+    font-size: 15px;
+  }
+}

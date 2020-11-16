@@ -87,3 +87,36 @@
   font-weight: 500;
   color: #000;
 }
+@media screen and (max-width: 700px){
+  .landing{
+    height: 80vh;
+  }
+  .center_piece> div>h1{
+    font-size: 32px;
+  }
+  .center_piece{
+    margin: 5% 2%;
+    height: 65vh;
+  }
+  .question{
+    font-size: 20px;
+  }
+  .inputs_wrapper{
+    flex-direction: column;
+    width: 100%;
+  }
+  .input_loc{
+    width: 100%;
+    margin: 1% 0;
+  }
+  .input_time{
+    width: 100%;
+    margin: 1% 0%;
+  }
+  .expand {
+    position: absolute;
+    z-index: 1;
+    top: 30%;
+    left: 92%;
+  }
+}

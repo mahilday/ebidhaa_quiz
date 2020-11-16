@@ -81,3 +81,25 @@
   color: #fff;
   font-size: 23px;
 }
+@media screen and (max-width: 700px){
+  .store_wrapper{
+    display: none;
+  }
+  .bottom_text{
+    flex-direction: column;
+    margin-top: 10%;
+  
+  }
+  .footer_nav{
+    width: 50%;
+    margin-left: 0px;
+  }
+  .footer_nav li:nth-child(2){
+    margin:0 10%;
+  }
+  .footer_icons {
+    display: flex;
+    justify-content: space-between;
+    width:30%;
+  }
+}

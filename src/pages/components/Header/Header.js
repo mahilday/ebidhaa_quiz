@@ -18,7 +18,7 @@ class Header extends Component {
         <img className="landing" src={this.props.landing} alt="landing" />
         <section className="center_piece">
           <div>
-          <h1 className="mb-4">What are you eating today</h1>
+          <h1 className="mb-4 question">What are you eating today?</h1>
           <div className="inputs_wrapper">
             {/* first input for location */}
             <Input className="input_loc">

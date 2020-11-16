@@ -1,29 +1,26 @@
 import React, { useState } from "react";
 import "./Order.css";
+import Location from "../../../assets/icons/location.svg";
+import NumberFormat from 'react-number-format';
 
 function Order(props) {
   const [count, setCount] = useState(1);
   return (
     <div
       className={props.show ? "d-block modal" : "modal d-none"}
-      tabindex="-1"
+      tabIndex="-1"
       role="dialog"
     >
       <div className="modal-dialog" role="document">
         <div className="modal-content">
-          {/* <div className="modal-headx">
-          <button type="button" className="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true" className="material-icons" onClick={props.close}>close</span>
-          </button>
-        </div> */}
           <div className="modal-body">
-            <div className="col-8 p-0 order-des">
+            <div className=" p-0 order-des">
               <img
                 src="https://res.cloudinary.com/matsxript/image/upload/v1605498045/Rectangle_1_9_xcwyqp.svg"
                 alt="order_img"
               />
               <div className="black_order">
-                <p className="text-white order_title mt-3">
+                <p className="text-white order_name mt-3">
                   {props.order.title}
                 </p>
                 <p className="text-white order_descrip mt-3 text-center">
@@ -31,7 +28,7 @@ function Order(props) {
                 </p>
                 <div className="price_increment">
                   <p className="text-white order_price">
-                    &#x20a6; {props.order.price * count + ".00"}
+                    &#x20a6; <NumberFormat className="text-white" value={ props.order.price * count } displayType={'text'} thousandSeparator={true} prefix={''}  />  
                   </p>
                   <div>
                     <span className="material-icons order_icons" onClick={()=>{setCount(count - 1)}}>remove</span>
@@ -41,8 +38,25 @@ function Order(props) {
                 </div>
               </div>
             </div>
-            <div className="order_confirm">
+            <div className="order_confirm ">
+            <button type="button" className="close-btn">
+            <span aria-hidden="true" className="material-icons" onClick={props.close}>close</span>
+          </button>
                 <p>We need to confirm the availability of this meal from the Black pepper Annex closest to you.</p>
+                <section>
+                <div className="input_order">
+              <span>
+                <img className="location" src={Location} alt="location icon" />
+              </span>
+              <input
+                className="input_ord"
+                type="text"
+                placeholder="Select Closest BlackBells to you"
+              />
+              <i className="material-icons expand">expand_more</i>
+            </div>
+            <button className="btn confirm">Confirm</button>
+            </section>
             </div>
           </div>
         </div>

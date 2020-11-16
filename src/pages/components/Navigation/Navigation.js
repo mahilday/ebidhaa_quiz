@@ -5,14 +5,7 @@ import Bell from "../../../assets/icons/bell.svg"
 import './Navigation.css'
 
 // styling for components
-const Button = styled.button`
-    background: #000;
-    border-radius: 5px;
-    color:#fff;
-    padding:7px 25px;
-    font-weight:600;
-    border:none;
-`
+
 const Nav = styled.nav`
     width:100%;
     height:20vh;
@@ -20,10 +13,7 @@ const Nav = styled.nav`
     justify-content: space-between;
     color: #000;
 `
-const Logo = styled.h1`
-    font-weight: 700;
-    font-size:32px;
-`
+
 
 
 class Navigation extends Component {
@@ -32,12 +22,12 @@ class Navigation extends Component {
     return (
       <Nav className="row">
         <div className="col first">
-       <img className="mx-3" src={Menu} alt="menu"/>
-       <img className="mr-1" src={Bell} alt="bell"/>
-        <Logo className="mx-1">Blackpeppereats</Logo>
+       <img className="mx-3 menu" src={Menu} alt="menu"/>
+       <img className="mr-1 menu" src={Bell} alt="bell"/>
+        <h1 className="mx-1 logo">Blackpeppereats</h1>
         </div>
         <div className="col second">
-            <Button className="btn">Sign in</Button>
+            <button className="btn btn_nav">Sign in</button>
         </div>
       </Nav>
     );
