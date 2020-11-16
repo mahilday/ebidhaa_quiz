@@ -7,11 +7,14 @@ function Order(props) {
   const [count, setCount] = useState(1);
   return (
     <div
-      className={props.show ? "d-block modal" : "modal d-none"}
+      className={props.show ? "d-block modal " : "modal d-none"}
+      id="exampleModalScrollable"
       tabIndex="-1"
       role="dialog"
+      aria-labelledby="exampleModalScrollableTitle" aria-hidden="true"
     >
-      <div className="modal-dialog" role="document">
+      <div className="modal-dialog modal-dialog-scrollable" role="document"
+      >
         <div className="modal-content">
           <div className="modal-body">
             <div className=" p-0 order-des">
