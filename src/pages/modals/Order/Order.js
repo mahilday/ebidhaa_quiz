@@ -17,7 +17,7 @@ function Order(props) {
       >
         <div className="modal-content">
           <div className="modal-body">
-            <div className=" p-0 order-des">
+            <div className="order-des">
               <img
                 src="https://res.cloudinary.com/matsxript/image/upload/v1605498045/Rectangle_1_9_xcwyqp.svg"
                 alt="order_img"

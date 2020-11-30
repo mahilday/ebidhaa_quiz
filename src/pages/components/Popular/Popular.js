@@ -69,7 +69,6 @@ class Popular extends Component {
       showOrder: true,
       order: order,
     });
-    console.log(this.state.order);
   };
   cancelModal = () => {
     this.setState({
